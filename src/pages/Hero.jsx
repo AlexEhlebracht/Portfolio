@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="Hero-container">
       <div className="Hero-right">
         <SplitText
-          text="Hi, I'm Alex Ehlebracht YAYYY!"
+          text="Hi, I'm Alex Ehlebracht!"
           className="Hero-header-text"
           delay={50}
           duration={1.25}
