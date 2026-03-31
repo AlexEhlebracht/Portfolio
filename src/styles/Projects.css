@@ -1,0 +1,538 @@
+/* =========================
+   PROJECTS (Glass + Accordion)
+   Matches your existing vibe
+   ========================= */
+
+.Projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 110px 0;
+}
+
+.Projects-card {
+  width: 70%;
+  border-radius: 28px;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 18px 60px rgba(0, 0, 0, 0.45),
+    0 0 32px rgba(140, 90, 255, 0.12);
+
+  padding: 30px 28px 26px;
+}
+
+.Projects-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.Projects-title {
+  margin: 0;
+  font-size: 44px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.Projects-rule {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 120, 255, 0.9),
+    rgba(60, 110, 255, 0.55),
+    rgba(255, 255, 255, 0.06)
+  );
+  border-radius: 999px;
+}
+
+.Projects-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 72ch;
+}
+
+.Projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* =========================
+   Project Row
+   ========================= */
+
+.ProjectRow {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.ProjectRow-top {
+  width: 100%;
+  border: 0;
+  padding: 18px 18px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: space-between;
+
+  text-align: left;
+}
+
+.ProjectRow-top:focus-visible {
+  outline: 2px solid rgba(200, 120, 255, 0.65);
+  outline-offset: 3px;
+  border-radius: 18px;
+}
+
+.ProjectRow-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.ProjectRow-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ProjectRow-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ProjectRow-status {
+  opacity: 0.9;
+}
+
+.ProjectRow-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.ProjectRow-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 78ch;
+}
+
+.ProjectRow-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.ProjectTag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 30px;
+  padding: 0 12px;
+
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* right side preview image + chevron */
+.ProjectRow-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ProjectRow-imageWrap {
+  width: 150px;
+  height: 92px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 18px rgba(140, 90, 255, 0.08);
+}
+
+.ProjectRow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ProjectRow-imageFallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.ProjectRow-chevron {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.ProjectRow-chevronLine {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+}
+
+.ProjectRow-chevronLine:first-child {
+  transform: translateX(-4px) rotate(45deg);
+}
+
+.ProjectRow-chevronLine:last-child {
+  transform: translateX(4px) rotate(-45deg);
+}
+
+.ProjectRow.is-open .ProjectRow-chevronLine:first-child {
+  transform: translateX(-4px) rotate(-45deg);
+}
+
+.ProjectRow.is-open .ProjectRow-chevronLine:last-child {
+  transform: translateX(4px) rotate(45deg);
+}
+
+/* Hover polish */
+.ProjectRow-top:hover .ProjectRow-imageWrap {
+  transform: translateY(-1px);
+  transition: transform 0.35s ease;
+}
+
+/* =========================
+   Accordion panel (smooth)
+   Uses grid rows trick: 0fr -> 1fr
+   ========================= */
+
+.ProjectRow-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 520ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.ProjectRow.is-open .ProjectRow-panel {
+  grid-template-rows: 1fr;
+}
+
+.ProjectRow-panelInner {
+  overflow: hidden;
+  padding: 0 18px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   Expanded details
+   ========================= */
+
+.ProjectDetail {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 18px;
+  padding-top: 16px;
+}
+
+.ProjectDetail-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.ProjectDetail-paragraph {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ProjectDetail-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.ProjectLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 16px;
+
+  border-radius: 9999px;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.ProjectLink:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.18),
+    0 0 18px rgba(170, 110, 255, 0.2),
+    0 0 12px rgba(70, 120, 255, 0.12);
+}
+
+.ProjectLink.is-primary {
+  background: rgba(200, 120, 255, 0.92);
+  color: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ProjectDetail-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ProjectDetail-block {
+  border-radius: 18px;
+  padding: 12px 12px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ProjectDetail-blockTitle {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+}
+
+.ProjectDetail-list {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ProjectDetail-list li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Gallery (carousel row)
+   ========================= */
+
+.ProjectGallery {
+  margin-top: 14px;
+  padding-top: 12px;
+}
+
+.ProjectGallery-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ProjectGallery-hint {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.ProjectGallery-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 2px 2px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ProjectGallery-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.ProjectGallery-row::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+.ProjectGallery-item {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35),
+    0 0 18px rgba(140, 90, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectGallery-item img {
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.ProjectGallery-item figcaption {
+  padding: 10px 12px 12px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.4;
+  user-select: none;
+}
+
+/* footer note */
+.Projects-footnote {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 1150px) {
+  .Projects-card {
+    width: 80%;
+  }
+
+  .ProjectRow-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ProjectRow-right {
+    justify-content: space-between;
+  }
+
+  .ProjectRow-imageWrap {
+    width: 100%;
+    height: 160px;
+  }
+
+  .ProjectDetail {
+    grid-template-columns: 1fr;
+  }
+
+  .ProjectGallery-item {
+    width: 280px;
+  }
+
+  .Projects-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Projects-card {
+    padding: 22px 16px 18px;
+    border-radius: 22px;
+    width: 90%;
+  }
+
+  .Projects-title {
+    font-size: 34px;
+  }
+
+  .ProjectRow-top {
+    padding: 14px 14px;
+  }
+
+  .ProjectRow-panelInner {
+    padding: 0 14px 14px;
+  }
+
+  .ProjectGallery-item img {
+    height: 180px;
+  }
+}

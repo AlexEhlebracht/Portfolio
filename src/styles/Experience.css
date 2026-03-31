@@ -1,0 +1,196 @@
+/* =========================
+   EXPERIENCE
+   Matches your glassy / neon vibe without being loud
+   ========================= */
+
+.Experience {
+  width: 100vw;
+  padding: 110px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Experience-inner {
+  width: 70%;
+}
+
+/* Header */
+.Experience-header {
+  margin-bottom: 22px;
+}
+
+.Experience-title {
+  font-size: 2.4rem;
+  margin: 0;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.Experience-subtitle {
+  margin: 10px 0 0 0;
+  color: var(--text-muted);
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+/* Card */
+.Experience-card {
+  position: relative;
+  border-radius: 28px;
+
+  background: rgba(10, 10, 18, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 18px 60px rgba(0, 0, 0, 0.45),
+    0 0 26px rgba(140, 90, 255, 0.1);
+
+  padding: 26px 26px 22px 26px;
+}
+
+.Experience-topRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.Experience-roleBlock {
+  min-width: 0;
+}
+
+.Experience-role {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.Experience-org {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.Experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  text-align: right;
+  min-width: 260px;
+}
+
+.Experience-date {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.Experience-type {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Bullets */
+.Experience-bullets {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.Experience-bullets li {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.Experience-strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* Footer */
+.Experience-footer {
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.Experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Experience-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+
+  border-radius: 9999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  font-weight: 650;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.Experience-note {
+  color: var(--text-muted);
+  line-height: 1.4;
+  max-width: 48ch;
+}
+
+/* Responsive */
+@media (max-width: 1150px) {
+  .Experience-topRow {
+    flex-direction: column;
+  }
+
+  .Experience-inner {
+    width: 80%;
+  }
+
+  .Experience-meta {
+    align-items: flex-start;
+    text-align: left;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .Experience {
+    padding: 90px 0;
+  }
+
+  .Experience-inner {
+    width: 90%;
+  }
+
+  .Experience-card {
+    padding: 20px 18px 18px 18px;
+    border-radius: 22px;
+  }
+
+  .Experience-title {
+    font-size: 2.05rem;
+  }
+
+  .Experience-role {
+    font-size: 1.2rem;
+  }
+}

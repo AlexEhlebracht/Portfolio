@@ -1,0 +1,163 @@
+/* =========================
+   ABOUT SECTION (GLASS CARD)
+   ========================= */
+
+.About {
+  /* match the spacing rhythm of your page sections */
+  padding: 110px 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.About-inner {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Glass card */
+.About-card {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 32px;
+
+  box-shadow:
+    0 18px 60px rgba(0, 0, 0, 0.45),
+    0 0 26px rgba(140, 90, 255, 0.12);
+
+  padding: 34px 34px 28px;
+}
+
+.About-header {
+  margin-bottom: 18px;
+}
+
+.About-title {
+  margin: 0;
+  font-size: 2.3rem;
+  line-height: 1.05;
+  color: var(--text, rgba(255, 255, 255, 0.95));
+  letter-spacing: -0.02em;
+}
+
+.About-subtitle {
+  margin: 10px 0 0;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.78));
+}
+
+.About-body p {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-muted, rgba(255, 255, 255, 0.72));
+}
+
+.About-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Pills */
+.About-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* Keep this separate from nav/hero pill class (as you requested) */
+.About-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+  border-radius: 9999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.12),
+    0 0 18px rgba(170, 110, 255, 0.12),
+    0 0 12px rgba(70, 120, 255, 0.08);
+
+  user-select: none;
+}
+
+.About-pillText {
+  font-weight: 650;
+  font-size: 0.92rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1150px) {
+  .About {
+    padding: 110px 0;
+  }
+
+  .About-inner {
+    width: 80%;
+  }
+
+  .About-card {
+    padding: 26px 22px 22px;
+    border-radius: 26px;
+  }
+
+  .About-title {
+    font-size: 2rem;
+  }
+
+  .About-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .About-body p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .About-inner {
+    width: 90%;
+  }
+
+  .About-pill {
+    padding: 9px 12px;
+  }
+
+  .About-pillText {
+    font-size: 0.88rem;
+  }
+}
+
+.about-content p {
+  margin-bottom: 1.35rem;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-divider {
+  width: 100%;
+  height: 2px;
+  margin: 10px 0 20px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(200, 120, 255, 0.85), rgba(70, 120, 255, 0.55));
+  opacity: 0.9;
+}

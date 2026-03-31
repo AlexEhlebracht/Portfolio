@@ -1,0 +1,155 @@
+/* Matches your glass card style used in About/Experience */
+
+.Education-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 110px 0px;
+}
+
+.Education-card {
+  width: 70%;
+  border-radius: 28px;
+  padding: 34px 34px 30px;
+
+  background: rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 18px 55px rgba(0, 0, 0, 0.55),
+    0 0 26px rgba(140, 90, 255, 0.12);
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.Education-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.Education-title {
+  font-size: 44px;
+  line-height: 1.05;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.Education-rule {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 120, 255, 0.9),
+    rgba(60, 110, 255, 0.55),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.Education-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 18px;
+}
+
+.Education-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.Education-role {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.Education-org {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.Education-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.Education-dates {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.Education-body {
+  margin-top: 20px;
+}
+
+.Education-subtitle {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.Education-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.Education-strong {
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 1150px) {
+  .Education-card {
+    padding: 28px 22px 22px;
+    border-radius: 24px;
+    width: 80%;
+  }
+
+  .Education-title {
+    font-size: 38px;
+  }
+
+  .Education-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Education-right {
+    text-align: left;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 900px) {
+  .Education-card {
+    width: 90%;
+  }
+
+  .Education-section {
+    padding: 96px 0 70px;
+  }
+
+  .Education-title {
+    font-size: 34px;
+  }
+}
