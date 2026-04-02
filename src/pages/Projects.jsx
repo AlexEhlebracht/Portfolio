@@ -109,7 +109,7 @@ export default function Projects() {
         heroImage: '/chat/chat1.png', // <-- change
         tags: ['Django', 'React', 'WebSockets', 'Redis', 'Channels', 'JWT'],
         links: [
-          { label: 'Live Demo', href: 'https://chatapp.alexehlebracht.com', kind: 'primary' },
+          { label: 'Live Demo', href: 'https://chat.alexehlebracht.com', kind: 'primary' },
           // { label: 'Repo', href: 'https://github.com/YOURNAME/YOURREPO', kind: 'secondary' },
         ],
         overview: [
